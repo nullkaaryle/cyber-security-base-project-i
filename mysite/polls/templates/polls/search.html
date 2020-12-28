@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<head>
+    <meta charset="utf-8">
+    <title>Polls Search</title>
+</head>
+
+<body>
+
+    <a href="/polls" style="color: green">Back to home</a>
+
+    <h1> SEARCH QUESTIONS </h1>
+
+    <form action="" method="post">
+
+        <label for="search_term">Search for a question: </label>
+        <input id="search_term" type="text" name="search_term">
+        <input type="submit" value="OK">
+    </form>
+
+    {% if search_term|length > 0 %}
+        <h3>Your searched for: {{search_term}}</h3>
+    {% endif %}
+
+    {% if db_result|length == 0 %}
+       
+        {% if search_term|length > 0 %}
+            <p>No search results!</p>
+        {% endif %}
+
+    {% elif search_term|length == 0 %}
+            
+        <p>Please add a search term!</p>
+    
+    {% else %}
+
+        <h3>Your search results: </h3>
+
+            <ul>
+                {% for result in db_result %}
+                <li>
+                    {{ result}}
+                </li>
+                {% endfor %}
+            </ul>
+
+    {% endif %}
+
+</body>
+
+</html>

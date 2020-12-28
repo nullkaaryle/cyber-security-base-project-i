@@ -1,0 +1,150 @@
+[
+    {
+        "model": "polls.question",
+        "pk": 1,
+        "fields": {
+            "question_text": "And folks dressed up like",
+            "pub_date": "2020-12-19T18:29:07Z"
+        }
+    },
+    {
+        "model": "polls.question",
+        "pk": 2,
+        "fields": {
+            "question_text": "Yuletide carols being sung",
+            "pub_date": "2020-12-19T18:29:55Z"
+        }
+    },
+    {
+        "model": "polls.question",
+        "pk": 3,
+        "fields": {
+            "question_text": "Jack Frost nipping at your",
+            "pub_date": "2020-12-19T18:36:54Z"
+        }
+    },
+    {
+        "model": "polls.question",
+        "pk": 4,
+        "fields": {
+            "question_text": "Chestnuts roasting",
+            "pub_date": "2020-12-19T18:38:54Z"
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 3,
+        "fields": {
+            "question": 2,
+            "choice_text": "by a choir",
+            "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 4,
+        "fields": {
+            "question": 2,
+            "choice_text": "wrong",
+            "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 5,
+        "fields": {
+            "question": 3,
+            "choice_text": "nose",
+            "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 6,
+        "fields": {
+            "question": 3,
+            "choice_text": "toes",
+            "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 7,
+        "fields": {
+            "question": 1,
+            "choice_text": "Eskimos",
+            "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 8,
+        "fields": {
+            "question": 1,
+            "choice_text": "penguins",
+            "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 1,
+        "fields": {
+            "question": 4,
+            "choice_text": "on an open fire",
+            "votes": 1
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 2,
+        "fields": {
+            "question": 4,
+            "choice_text": "in an oven",
+            "votes": 0
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$RpQnUCLRg1hB$FbN7vcRK2qGvRduXBW51w3LiqK6xuO5+e/m1DsB7c9s=",
+            "username": "alice",
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$R8tD9MJtdcyv$HLuNhmLW7p0KNZy8UF6n5SC4qqGQZe0p+4Lc1yPpuU8=",
+            "username": "bob",
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$xilKHHUihZOE$bpYwo+uhf6Fg0RMSVu0tt17LAeLYOhZ0YhG9thmHPKM=",
+            "username": "admin",
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": true
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$NdEfwZFWYILA$hQNXb4XB/UJLFj3aMPjXwaYjudr76UlzctA3smj5hIw=",
+            "username": "username",
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": false
+        }
+    }
+]

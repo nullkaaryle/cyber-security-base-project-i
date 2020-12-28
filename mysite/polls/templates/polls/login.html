@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  body {
+    color: rgb(194, 19, 19);
+    background: white url("/static/polls/images/background.gif") no-repeat;
+  }
+</style>
+
+<body>
+  <h2>Login to see questions and vote</h2>
+
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Login</button>
+    </form>
+
+</body>
+
+</html>
